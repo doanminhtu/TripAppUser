@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="left"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="6"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_logo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_quote" />
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:text="The world is too big to stay in one place!"
+                android:id="@+id/txtSlogan"
+                android:textSize="22sp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--Section Buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        >
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:background="@drawable/btn_black"
+            android:text="Sign In"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnSignIn"
+            />
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:elevation="0dp"
+            android:background="@drawable/btn_line"
+            android:text="Sign Up"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:id="@+id/btnSignUp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
